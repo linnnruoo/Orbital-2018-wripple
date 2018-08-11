@@ -1,13 +1,15 @@
-# Mlab to MongoDB
-Mlab is used to host the DB on cloud
-* Register done
-* Host is set up on local server @ 5000
-### To access the DB
-* Create a keys.js file under ./config
-```
-module.exports = {
-    mongoURI:
-    'mongodb://<dbUser>:<dbPassword>@ds016148.mlab.com:16148/wripple_users',
-    secretOrKey: 'secret'
-};
-```
+# Orbital-2018-wripple
+NUS Orbital Project - Team D4rk Knights
+
+## Team Name
+D4rk Knights
+
+## Project Idea
+wripple: Collaboration Made Easy for Students.It allows students to post the projects that they would like to start on, and other students with the relevant skills can request to join the project. 
+ 
+## Deployment Issues
+29-07-18 The app now supports all browsers.<br />
+30-07-18 Internal Server Error due to client side routering problems solved.
+Current: Making the site responsive
+
+## Live @ https://wripple.herokuapp.com
