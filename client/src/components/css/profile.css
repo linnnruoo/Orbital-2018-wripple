@@ -1,0 +1,44 @@
+.profile-container {
+    padding-top: 84px;
+}
+
+.container .profile-container{
+  max-width: 1200px;
+}
+
+
+.profile-image{
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card .profile-card{
+    margin-bottom: 8px
+}
+
+.avatar-feedback {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-name{
+    font-weight: 600;
+    font-size: 0.9em
+}
+
+.feedback-comment{
+    font-size: 0.75em;
+    color: grey
+}
+
+.text-blue{
+    color: rgb(35,137,218)
+}

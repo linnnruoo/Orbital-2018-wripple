@@ -1,0 +1,82 @@
+.project-container {
+    padding-top: 84px;
+}
+
+.searchbar {
+    padding: 32px;
+    background-color: #E9E9E9;
+    height: 100px
+}
+
+.project-card {
+    margin-bottom: 8px
+}
+
+.item-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.namecard {
+    display: inline
+}
+
+.namecard .name {
+    font-weight: 600
+}
+
+.namecard .school {
+    font-size: 0.75em;
+    font-weight: 500
+}
+
+.btm-headings {
+    font-size: 0.5em;
+    font-weight: 700;
+    letter-spacing: 1px
+}
+
+.post-time {
+    float: right;
+    font-size: 0.6em
+}
+
+.filter-titles {
+    font-weight: 600
+}
+
+/* for detail */
+
+.detail-avatar{
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.detail-avatar-mini {
+  vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-blue{
+    color: rgb(35,137,218)
+}

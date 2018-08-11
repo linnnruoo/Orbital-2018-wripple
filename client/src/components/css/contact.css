@@ -1,0 +1,51 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color:#E9e9e9; 
+    background-size: 100%;
+}
+
+.contact-container {
+    padding-top: 84px;
+}
+
+.navbar {
+    background-color: rgb(15,94,156)
+}
+
+.custom-row {
+    margin-bottom: 50px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+.contact-icon {
+    padding-right: 10px;
+    color: black;
+}
+
+.contact-icon:hover {
+    text-decoration: none;
+    color: rgb(15,94,156);
+}
+
+.col1, .col2 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.col1 {padding-left: 80px; padding-right: 40px;}
+.col2 {padding-right: 80px; padding-left:40px;}
+
+.submit-btn {
+    background: rgb(15,94,156);
+    border-color: rgb(15,94,156);
+}
+
+.submit-btn:hover {
+    background: rgb(68, 102, 134);
+    border-color: rgb(68, 102, 134);
+}
+
+.text-blue{
+    color: rgb(35,137,218)
+}

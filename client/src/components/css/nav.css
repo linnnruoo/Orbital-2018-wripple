@@ -1,0 +1,93 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.nav-menu {
+    background-color: transparent;
+    color: white;
+    transition: .3s;
+    height: 65px;
+}
+
+.menu {
+    color: white;
+    text-decoration: none;
+}
+
+.menu:hover {
+    color: rgb(15,94,156);
+    background: white;
+}
+
+.dropdown-toggle {
+    color: white;
+    background: transparent
+}
+
+.dropdown-toggle:hover {
+    color: rgb(15,94,156);
+    background: white
+}
+
+.sign-up-btn:hover {
+    color: white;
+}
+
+.login-btn {
+    background: white;
+    color: rgb(72, 135, 168);
+}
+.login-btn:hover {
+    border-color: rgb(72, 135, 168);
+    color: white;
+    background: rgb(72, 135, 168);
+}
+
+
+
+/*scrolling effect in nav bar*/
+nav.nav-bar-collapse {
+    background: rgb(15,94,156);
+    /*height: 50px;*/
+    transition: .3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+nav.nav-bar-onTop {
+    background: transparent;
+}
+
+
+
+.navbtns{
+    background-color: rgb(35,137,218)
+}
+
+.profileDropdown{
+  position: absolute;
+  right: 0;
+  overflow: auto;
+  width: 100%
+}
+
+.btn-group-vertical{
+  width: 100%
+}
+
+.avatar{
+  vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.vl{
+    border-right: 1px solid #fff
+}

@@ -1,0 +1,14 @@
+body {
+    background-color: #E9e9e9;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card-signup {
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
+
+
+}
+
+.text-blue{
+    color: rgb(35,137,218)
+}

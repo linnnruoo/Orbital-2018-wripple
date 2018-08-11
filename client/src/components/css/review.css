@@ -1,0 +1,78 @@
+.review-container{
+  padding-top: 84px
+}
+
+.review-avatar{
+  vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn.btn-light.btn-yay:focus{
+  background-color: #5cb85c;
+  color: white
+}
+
+.btn.btn-light.btn-meh:focus{
+  background-color: #f0ad4e;
+  color: white
+}
+
+.btn.btn-light.btn-sad:focus{
+  background-color: #d9534f;
+  color: white
+}
+
+
+.btn.btn-light.btn-yay:hover{
+  background-color: #5cb85c;
+  color: white
+}
+
+.btn.btn-light.btn-meh:hover{
+  background-color: #f0ad4e;
+  color: white
+}
+
+.btn.btn-light.btn-sad:hover{
+  background-color: #d9534f;
+  color: white
+}
+
+
+.btn.btn-light.btn-yay:active{
+  background-color: #5cb85c;
+  color: white
+}
+
+.btn.btn-light.btn-meh:active{
+  background-color: #f0ad4e;
+  color: white
+}
+
+.btn.btn-light.btn-sad:active{
+  background-color: #d9534f;
+  color: white
+}
+
+
+
+
+
+
+#sad-btn:focus {
+  background-color: #d9534f;
+  color: white
+}
+
+#meh-btn:focus {
+  background-color: #f0ad4e;
+  color: white
+}
+
+#yay-btn:focus {
+  background-color: #5cb85c;
+  color: white
+}

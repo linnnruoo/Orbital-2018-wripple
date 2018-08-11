@@ -1,0 +1,122 @@
+.homeContent .row{
+  margin-right: 0px
+}
+
+.text {
+    position: absolute;
+	top: 50%;
+	right: 50%;
+    transform: translate(50%,-50%);
+    max-width: 90%;
+}
+
+.container1 .caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.container1 .caption {color: white;}
+
+.display-3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container1 .caption p{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.container1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index:1;
+}
+
+.content {
+    margin-top: 50px;
+}
+.container2{
+    max-width: 1500px;
+    margin-bottom: 50px;
+}
+
+.container2 h3 {font-weight: 400;}
+
+.img2 {margin-top: 10px;}
+
+.img3 {background: url(../img/annie-spratt-home.jpg); width:100%;}
+
+.col1 {
+    padding-bottom: 200px;
+    font-size: 18px;
+    padding-right: 50px;
+    padding-left: 30px;
+    padding-top: 25px;
+    padding-bottom:85px;
+}
+
+.container3, .alumini-msg{
+    text-align: center;
+    background-color: rgb(15,94,156);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.alumini-msg{background-color: #E9e9e9; color:black;}
+
+.container4 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.card1{
+    max-width: 20rem;
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
+    height: 350px
+}
+
+.card2 {
+    border: none;
+    box-shadow: none;
+    max-width: 18rem;
+    background-color: #E9e9e9;
+}
+
+.col-centered {margin: auto;}
+
+.about-section a {
+    padding-top:20px;
+    padding-right: 40px; 
+    width: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.about-section a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.about-section {
+    padding:40px; 
+    background-color:rgb(15,94,156); 
+    color: white;
+}
+
+.button1 {margin-right:5px;}
+.button2 {margin-left:5px;}
+
+.home-icon {
+    font-size: 24px;
+    color: white;
+}
+
+.home-icon:hover {
+    color: black;
+}

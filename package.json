@@ -1,0 +1,29 @@
+{
+  "name": "wripple_server",
+  "version": "1.0.0",
+  "description": "connection to database",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "author": "lr & k",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "gravatar": "^1.6.0",
+    "jsonwebtoken": "^8.2.2",
+    "mongoose": "^5.1.4",
+    "nodemailer": "^4.6.7",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7",
+    "validator": "^10.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
