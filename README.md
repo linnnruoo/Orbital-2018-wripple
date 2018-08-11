@@ -10,5 +10,6 @@ wripple: Collaboration Made Easy for Students.It allows students to post the pro
 ## Deployment Issues
 29-07-18 The app now supports all browsers.<br />
 30-07-18 Internal Server Error due to client side routering problems solved.
+Current: Making the site responsive
 
 ## Live @ https://wripple.herokuapp.com
