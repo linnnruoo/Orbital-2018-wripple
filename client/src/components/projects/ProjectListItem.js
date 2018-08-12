@@ -45,7 +45,7 @@ class ProjectListItem extends Component {
               <div className="btm-headings">LOOKING FOR: </div>
               <div className="mb-2">
                 {item.looking_for.map((job, index) => {
-                  return <div className="btn btn-light btn-sm mr-2 shadow-sm mb-2" key={index}>{job}</div>
+                  return <div className="btn btn-light btn-sm mr-2 shadow-sm mb-2" key={index}>{ job==="Graphic_Designer" ? <div>Graphic Designer</div> : job }</div>
                 })}
               </div>
               <div className="mb-2">

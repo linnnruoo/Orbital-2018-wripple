@@ -2,22 +2,6 @@ import React, { Component } from 'react';
 import {Checkbox, CheckboxGroup } from 'react-checkbox-group';
 
 class ProjectFilter extends Component {
-  constructor(){
-    super();
-
-    this.state = {
-      search_field: []
-    }
-
-    this.onCheckboxChange = this.onCheckboxChange.bind(this);
-  }
-
-  onCheckboxChange = (new_search_field) => {
-    this.setState({
-      search_field: new_search_field
-    })
-  }
-
   render(){
     return (
       <div className="card shadow fixed">
@@ -27,31 +11,42 @@ class ProjectFilter extends Component {
           <CheckboxGroup
             checkboxDepth={2}
             name="seach_field"
-            value={this.state.search_field}
-            onChange={this.onCheckboxChange}
+            value={this.props.role_search}
+            onChange={this.props.onCheckboxChange1}
           >  
-            <label><Checkbox value="Any role"/> Any role</label><br />
+            
             <label><Checkbox value="Entrepreneur"/> Entrepreneur</label><br />
             <label><Checkbox value="Programmer"/> Programmer</label><br />
             <label><Checkbox value="Engineer"/> Engineer</label><br />
             <label><Checkbox value="Photographer"/> Photographer</label><br />
-            <label><Checkbox value="Creative Designer"/> Creative Designer</label><br />
+            <label><Checkbox value="Graphic_Designer"/> Graphic Designer</label><br />
             <label><Checkbox value="Videographer"/> Videographer</label><br />
             <br />
+          </CheckboxGroup>
 
+          <CheckboxGroup
+            checkboxDepth={2}
+            name="seach_field"
+            value={this.props.size_search}
+            onChange={this.props.onCheckboxChange2}
+          >
             <h6 className="filter-titles">Size of team</h6>
-            <label><Checkbox value="Any Size"/> Any Size</label><br />
-            <label><Checkbox value="1 - 5"/> 1 - 5</label><br />
-            <label><Checkbox value="6 - 10"/> 6 - 10</label><br />
-            <label><Checkbox value="10+"/> 10+</label><br />
+            <label><Checkbox value="1-5"/> 1 - 5</label><br />
+            <label><Checkbox value="6-10"/> 6 - 10</label><br />
+            <label><Checkbox value=">10"/> > 10</label><br />
             <br />
-
+          </CheckboxGroup>
+          
+          <CheckboxGroup
+            checkboxDepth={2}
+            name="seach_field"
+            value={this.props.com_lvl_search}
+            onChange={this.props.onCheckboxChange3}
+          >
             <h6 className="filter-titles">Commitment level</h6>
-            <label><Checkbox value="Any duration"/> Any duration</label><br />
             <label><Checkbox value="Short-term"/> Short-term</label><br />
             <label><Checkbox value="Medium-term"/> Medium-term</label><br />
             <label><Checkbox value="Long-term"/> Long-term</label><br />
-            
           </CheckboxGroup>
         </div>
       </div>
