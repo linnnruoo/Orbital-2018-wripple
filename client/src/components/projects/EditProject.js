@@ -148,7 +148,7 @@ class NewProject extends Component {
                         <label><Checkbox value="Entrepreneur"/> Entrepreneur</label><br/>
                         <label><Checkbox value="Programmer"/> Programmer</label><br/>
                         <label><Checkbox value="Engineer"/> Engineer</label><br/>
-                        <label><Checkbox value="Creative Designer"/> Creative Designer</label><br/>
+                        <label><Checkbox value="Graphic_Designer"/> Graphic Designer</label><br/>
                         <label><Checkbox value="Photographer"/> Photographer</label><br/>
                         <label><Checkbox value="Videographer"/> Videographer</label>
                       </CheckboxGroup>
@@ -181,7 +181,7 @@ class NewProject extends Component {
                       >
                         <option selected>Select team size</option>
                         {
-                          ['1-5', '6-10', '10+'].map((term, index) => {
+                          ['1-5', '6-10', '>10'].map((term, index) => {
                             return <option value={term} key={index}>{term}</option>
                           })
                         }

@@ -27,10 +27,10 @@ export const setProjectLoading = () => {
 }
 
 // search
-export const searchProjects = (pageId, keywords) => dispatch => {
+export const searchProjects = (pageId, keywords, role, com_lvl, size) => dispatch => {
     dispatch(setProjectLoading());
     axios
-        .get(`/api/search/projects/query?page=${pageId}&search=${keywords}`)
+        .get(`/api/search/projects/query?page=${pageId}&search=${keywords}&role=${role}&com_lvl=${com_lvl}&size=${size}`)
         .then(res => {
             dispatch({
                 type: VIEW_ALL_PROJECTS,

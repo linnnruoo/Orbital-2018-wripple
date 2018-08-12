@@ -54,7 +54,7 @@ class LoginForm extends Component {
             password: this.state.password
         }
 
-        console.log(currUser);
+        //console.log(currUser);
         this.props.loginUser(currUser);
     }
 

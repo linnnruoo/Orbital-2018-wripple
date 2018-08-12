@@ -15,23 +15,35 @@ class Search extends Component {
     this.state = {
 			searchField: '',
 			searchString: '',
-      pageIndex: 0
+      pageIndex: 0,
+
+      // checkbox groups
+      role_arr: [],
+      com_lvl_arr: [],
+      size_arr: [],
+
+      // new string
+      roleString: '',
+      comLvlString: '',
+      sizeString: ''
     }
 
     this.onSearchFieldChange = this.onSearchFieldChange.bind(this);
     this.onPageChange = this.onPageChange.bind(this);
     this.onSearch = this.onSearch.bind(this);
+    // checkbox changes
+    this.onCheckboxChange1 = this.onCheckboxChange1.bind(this);
+    this.onCheckboxChange2 = this.onCheckboxChange2.bind(this);
+    this.onCheckboxChange3 = this.onCheckboxChange3.bind(this);
   }
 
   componentDidMount() {
-    this.props.searchProjects(1, "");
+    this.props.searchProjects(1, "", "", "", "");
   }
 
   // change the search keywords on the search bar
   onSearchFieldChange = event => {
-    this.setState({
-      searchField: event.target.value
-    })
+    this.setState({ searchField: event.target.value })
   }
 
   // change the page number
@@ -39,7 +51,7 @@ class Search extends Component {
     this.setState({
       pageIndex: event.selected
     }, () => {
-      this.props.searchProjects(event.selected + 1, this.state.searchString);
+      this.props.searchProjects(event.selected + 1, this.state.searchString, this.state.roleString, this.state.comLvlString, this.state.sizeString);
     });
 
     console.log(this.state.pageIndex);
@@ -48,15 +60,34 @@ class Search extends Component {
   // submit search results
   onSearch = event => {
 		const tempString = this.state.searchField;
-		const	newSearchString = tempString.replace(/\s+/g, "+");
+    const	newSearchString = tempString.replace(/\s+/g, "+");
+    const newRoleString = this.state.role_arr.join('+');
+    const newComLvlString = this.state.com_lvl_arr.join('+');
+    const newSizeString = this.state.size_arr.join('+');
+
+    //console.log(newSizeString);
 
 		this.setState({
-			searchString: newSearchString
+      searchString: newSearchString,
+      roleString: newRoleString,
+      comLvlString: newComLvlString,
+      sizeString: newSizeString
 		})
 
-		console.log(newSearchString);
+    this.props.searchProjects(1, newSearchString, newRoleString, newComLvlString, newSizeString);
+  }
 
-    this.props.searchProjects(1, newSearchString);
+  // checkbox groups changes
+  onCheckboxChange1 = (new_search_field) => {
+    this.setState({ role_arr: new_search_field })
+  }
+
+  onCheckboxChange2 = (new_search_field) => {
+    this.setState({ size_arr: new_search_field })
+  }
+
+  onCheckboxChange3 = (new_search_field) => {
+    this.setState({ com_lvl_arr: new_search_field })
   }
 
   render() {
@@ -91,17 +122,24 @@ class Search extends Component {
       />
     }
 
-    projectFilter = <ProjectFilter />
+    projectFilter = <ProjectFilter 
+      role_arr = {this.state.role_arr}
+      com_lvl_arr = {this.state.com_lvl_arr}
+      size_arr = {this.state.size_arr}
+      onCheckboxChange1 = {this.onCheckboxChange1}
+      onCheckboxChange2 = {this.onCheckboxChange2}
+      onCheckboxChange3 = {this.onCheckboxChange3}
+    />
+
     projectSearch = <ProjectSearch
       searchField={this.state.searchField}
       onSearchFieldChange={this.onSearchFieldChange}
       projectPaginate={projectPaginate} 
       onSearch={this.onSearch}
-      />
+    />
+
     projectList = <ProjectList projects={all_projects.projects} />
     spinner = <div className="project-container"><div className="mx-auto text-center"><h4>Loading...</h4><div className="lds-ripple"><div></div><div></div></div></div></div>
-
-    
 
     return (
       <div className="container project-container">

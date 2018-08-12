@@ -129,7 +129,7 @@ class ProjectDetail extends Component {
                   <div className="row">
                     <div className="col-3"><span className="btm-headings">LOOKING FOR: </span></div>
                     <div className="col-9">{single_project.looking_for.map((job, index) => {
-                      return <div className="btn btn-light btn-sm shadow-sm m-2" key={index}>{job}</div>
+                      return <div className="btn btn-light btn-sm shadow-sm m-2" key={index}>{ job==="Graphic_Designer" ? <div>Graphic Designer</div> : job }</div>
                     })}</div>
                   </div>
 
