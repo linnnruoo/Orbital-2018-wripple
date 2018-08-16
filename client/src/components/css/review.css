@@ -56,23 +56,3 @@
   background-color: #d9534f;
   color: white
 }
-
-
-
-
-
-
-#sad-btn:focus {
-  background-color: #d9534f;
-  color: white
-}
-
-#meh-btn:focus {
-  background-color: #f0ad4e;
-  color: white
-}
-
-#yay-btn:focus {
-  background-color: #5cb85c;
-  color: white
-}

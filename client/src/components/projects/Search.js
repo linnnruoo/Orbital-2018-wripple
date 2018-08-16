@@ -13,8 +13,8 @@ class Search extends Component {
   constructor() {
     super();
     this.state = {
-			searchField: '',
-			searchString: '',
+      searchField: '',
+      searchString: '',
       pageIndex: 0,
 
       // checkbox groups
@@ -59,20 +59,20 @@ class Search extends Component {
 
   // submit search results
   onSearch = event => {
-		const tempString = this.state.searchField;
-    const	newSearchString = tempString.replace(/\s+/g, "+");
+    const tempString = this.state.searchField;
+    const newSearchString = tempString.replace(/\s+/g, "+");
     const newRoleString = this.state.role_arr.join('+');
     const newComLvlString = this.state.com_lvl_arr.join('+');
     const newSizeString = this.state.size_arr.join('+');
 
     //console.log(newSizeString);
 
-		this.setState({
+    this.setState({
       searchString: newSearchString,
       roleString: newRoleString,
       comLvlString: newComLvlString,
       sizeString: newSizeString
-		})
+    })
 
     this.props.searchProjects(1, newSearchString, newRoleString, newComLvlString, newSizeString);
   }
@@ -113,7 +113,7 @@ class Search extends Component {
 
         previousClassName={"page-item"}
         previousLinkClassName={"page-link btn btn-light"}
-        
+
         nextClassName={"page-item"}
         nextLinkClassName={"page-link btn btn-light"}
 
@@ -122,19 +122,19 @@ class Search extends Component {
       />
     }
 
-    projectFilter = <ProjectFilter 
-      role_arr = {this.state.role_arr}
-      com_lvl_arr = {this.state.com_lvl_arr}
-      size_arr = {this.state.size_arr}
-      onCheckboxChange1 = {this.onCheckboxChange1}
-      onCheckboxChange2 = {this.onCheckboxChange2}
-      onCheckboxChange3 = {this.onCheckboxChange3}
+    projectFilter = <ProjectFilter
+      role_arr={this.state.role_arr}
+      com_lvl_arr={this.state.com_lvl_arr}
+      size_arr={this.state.size_arr}
+      onCheckboxChange1={this.onCheckboxChange1}
+      onCheckboxChange2={this.onCheckboxChange2}
+      onCheckboxChange3={this.onCheckboxChange3}
     />
 
     projectSearch = <ProjectSearch
       searchField={this.state.searchField}
       onSearchFieldChange={this.onSearchFieldChange}
-      projectPaginate={projectPaginate} 
+      projectPaginate={projectPaginate}
       onSearch={this.onSearch}
     />
 
@@ -145,15 +145,20 @@ class Search extends Component {
       <div className="container project-container">
         <div className="grid">
           <div className="row">
-            <div className="col-3">
-              {projectFilter}
+            <div className="col-lg-3 d-none d-xl-block">
+              <div className="mb-2">
+                {projectFilter}
+              </div>
             </div>
-            <div className="col-9">
+            <div className="col-lg-9">
               <div className="mb-2">
                 {projectSearch}
               </div>
+              <div className="mb-2 d-block d-xl-none">
+                {projectFilter}
+              </div>
               {all_projects === null || loading ? spinner : projectList}
-              
+
               <div className="card shadow project-card">
                 <div className="card-body">
                   <div className="btn-toolbar" role="toolbar">
@@ -167,7 +172,7 @@ class Search extends Component {
           </div>
         </div>
       </div>
-    )   
+    )
   }
 }
 

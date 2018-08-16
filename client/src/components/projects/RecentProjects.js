@@ -20,7 +20,7 @@ class RecentProject extends Component {
                     <div className="row">
                       {recent_project.map((item, index) => {
                         return (
-                            <div className="col-4">
+                            <div className="col-4" key={index}>
                                 <NavLink to={`/project_detail/${item._id}`} className="text-blue">{item.title}</NavLink>
                                 <p className="text-truncate">{item.summary}</p>
                             </div>

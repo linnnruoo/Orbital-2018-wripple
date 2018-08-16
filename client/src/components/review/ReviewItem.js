@@ -22,14 +22,13 @@ class ReviewItem extends Component {
     return(  
       <div className="row card card-body m-4 users" key={index}>
         <div className="row">
-          <div className="col-1">
-            <img className="review-avatar float-left" src="https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-hacker-3830b32ad9e0802c-512x512.png" alt="" />
-          </div>
-          <div className="col-6">
+          <div className="col-lg-6">
+            <img className="review-avatar float-left mr-4" src="https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-hacker-3830b32ad9e0802c-512x512.png" alt="" />
             <h5>{person.first_name} {person.last_name}</h5>
           </div>
+  
 
-          <div className="col-5">
+          <div className="col-lg-6">
             <div className="btn-group float-right">
               <button type="button" className={`btn btn-light btn-yay btn-lg ${this.props.rating === "good" ? "active" : ""}`} onClick={this.onYayClick}><i className="far fa-smile"></i></button>
               <button type="button" className={`btn btn-light btn-meh btn-lg ${this.props.rating === "average" ? "active" : ""}`} onClick={this.onMehClick}><i className="far fa-meh"></i></button>

@@ -66,104 +66,102 @@ class Signup extends Component {
         //poll errors out from the state
         const { errors } = this.state;
         
-        return (
-            <div className="container py-5 px-5">
-                <form onSubmit={this.onSubmit} className="card mx-5 px-5 my-5 py-5 card-signup">
-                    <div className="container px-5 py-3">
-                        <h1>Sign Up</h1>
-                        <hr/>
-                        <div className="mb-3">
-                            <div className="row">
-                                <div className="col">
-                                    <label><b>First Name:</b></label>
-                                    <input  
-                                        className={classnames('form-control', {'is-invalid': errors.last_name })}  
-                                        type="text" 
-                                        name="first_name" 
-                                        value={this.state.first_name}
-                                        onChange={this.onChange} 
-                                    />
-                                    {errors.first_name && (<div className="invalid-feedback">{errors.first_name}</div>)}
-                                </div>
-                                <div className="col">
-                                    <label><b>Last Name:</b></label>
-                                    <input  
-                                        className={classnames('form-control', {'is-invalid': errors.last_name })}  
-                                        type="text" 
-                                        name="last_name" 
-                                        value={this.state.last_name}
-                                        onChange={this.onChange} 
-                                    />
-                                    {errors.last_name && (<div className="invalid-feedback">{errors.last_name}</div>)}
-                                </div>
+        return ( 
+            <div style={{marginTop:"84px"}}>
+            <form onSubmit={this.onSubmit} className="container card my-5 px-5 py-5 card-signup">
+                <div className="">
+                    <h1>Sign Up</h1>
+                    <hr/>
+                    <div className="mb-3">
+                        <div className="row">
+                            <div className="col-lg-6 col-md-6 mb-sm-3 mb-xs-3">
+                                <label><b>First Name:</b></label>
+                                <input  
+                                    className={classnames('form-control', {'is-invalid': errors.last_name })}  
+                                    type="text" 
+                                    name="first_name" 
+                                    value={this.state.first_name}
+                                    onChange={this.onChange} 
+                                />
+                                {errors.first_name && (<div className="invalid-feedback">{errors.first_name}</div>)}
+                            </div>
+                            <div className="col-lg-6 col-md-6">
+                                <label><b>Last Name:</b></label>
+                                <input  
+                                    className={classnames('form-control', {'is-invalid': errors.last_name })}  
+                                    type="text" 
+                                    name="last_name" 
+                                    value={this.state.last_name}
+                                    onChange={this.onChange} 
+                                />
+                                {errors.last_name && (<div className="invalid-feedback">{errors.last_name}</div>)}
                             </div>
                         </div>
-
-                        <div className="mb-3">
-                            <label><b>University:</b></label>
-                            <input  
-                                className={classnames('form-control', {'is-invalid': errors.university })}
-                                type="text" 
-                                name="university" 
-                                value={this.state.university}
-                                onChange={this.onChange} 
-                            />
-                            {errors.university && (<div className="invalid-feedback">{errors.university}</div>)}
-                        </div>
-
-                        <div className="mb-3">
-                            <label><b>Email:</b></label>
-                            <input 
-                               className={classnames('form-control', {'is-invalid': errors.email })}
-                                type="text" 
-                                name="email" 
-                                value={this.state.email}
-                                onChange={this.onChange} 
-                            />
-                            {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
-                        </div>
-
-                        <div className="mb-3">
-                            <label><b>Password:</b></label>
-                            <input  
-                                className={classnames('form-control', {'is-invalid': errors.password })}
-                                type="password" 
-                                name="password"
-                                value={this.state.password}
-                                onChange={this.onChange} 
-                            />
-                            {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
-                        </div>
-                        
-                        <div className="mb-3">
-                            <label><b>Confirm Password:</b></label>
-                            <input  
-                                className={classnames('form-control', {'is-invalid': errors.password2 })}
-                                type="password" 
-                                name="password2"
-                                value={this.state.password2}
-                                onChange={this.onChange}  
-                            />
-                            {errors.password2 && (<div className="invalid-feedback">{errors.password2}</div>)}
-                        </div>
-
-                        <hr/>            
-                        <p><input 
-                            type="checkbox" 
-                            name="terms"
-                            style={{marginBottom:'15px'}}
-                            id="check-box"
-                            required
-                        /> I have read and agreed with the <a href="www.google.com">Terms & Conditions</a>.</p>
-
-
-                        <div className="clearfix">
-                            <input type="submit" className="btn btn-primary btn-block submit-btn" />
-                        </div>
                     </div>
-                </form>
-            
-                
+
+                    <div className="mb-3">
+                        <label><b>University:</b></label>
+                        <input  
+                            className={classnames('form-control', {'is-invalid': errors.university })}
+                            type="text" 
+                            name="university" 
+                            value={this.state.university}
+                            onChange={this.onChange} 
+                        />
+                        {errors.university && (<div className="invalid-feedback">{errors.university}</div>)}
+                    </div>
+
+                    <div className="mb-3">
+                        <label><b>Email:</b></label>
+                        <input 
+                           className={classnames('form-control', {'is-invalid': errors.email })}
+                            type="text" 
+                            name="email" 
+                            value={this.state.email}
+                            onChange={this.onChange} 
+                        />
+                        {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
+                    </div>
+
+                    <div className="mb-3">
+                        <label><b>Password:</b></label>
+                        <input  
+                            className={classnames('form-control', {'is-invalid': errors.password })}
+                            type="password" 
+                            name="password"
+                            value={this.state.password}
+                            onChange={this.onChange} 
+                        />
+                        {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
+                    </div>
+                    
+                    <div className="mb-3">
+                        <label><b>Confirm Password:</b></label>
+                        <input  
+                            className={classnames('form-control', {'is-invalid': errors.password2 })}
+                            type="password" 
+                            name="password2"
+                            value={this.state.password2}
+                            onChange={this.onChange}  
+                        />
+                        {errors.password2 && (<div className="invalid-feedback">{errors.password2}</div>)}
+                    </div>
+
+                    <hr/>            
+                    <p><input 
+                        type="checkbox" 
+                        name="terms"
+                        style={{marginBottom:'15px'}}
+                        id="check-box"
+                        required
+                    /> I have read and agreed with the <a href="www.google.com">Terms & Conditions</a>.</p>
+
+
+                    <div className="clearfix">
+                        <input type="submit" className="btn btn-primary btn-block submit-btn" />
+                    </div>
+                </div>
+            </form>
             </div>
         );
     }

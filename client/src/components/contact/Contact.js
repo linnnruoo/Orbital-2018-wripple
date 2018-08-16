@@ -9,10 +9,10 @@ class Contact extends Component {
       <div>
         <div className="container contact-container">
             <div className="row custom-row">
-                <div className="col-md-6 mb-3 col1">
+                <div className="col-md-6 col-lg-6 mb-lg-3 col1">
                     <ContactInfo />
                 </div>
-                <div className="col-md-6 mb-3 col2">
+                <div className="col-md-6 col-lg-6 mb-lg-3 col2">
                     <ContactForm />
                 </div>
             </div>

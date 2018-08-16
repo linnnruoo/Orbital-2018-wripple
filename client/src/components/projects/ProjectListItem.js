@@ -27,7 +27,7 @@ class ProjectListItem extends Component {
           <p className="text-truncate">{item.summary}</p>
           <hr />
           <div className="row">
-            <div className="col-4">
+            <div className="col-6">
               <div className="btm-headings">POSTED BY:</div>
               <NavLink to={`/profiles/${item.user}`} className="mt-2 btn btn-light shadow-sm text-left">
                 <img src={avatar}
@@ -41,7 +41,7 @@ class ProjectListItem extends Component {
               </NavLink>
             </div>
 
-            <div className="col-8">
+            <div className="col-6">
               <div className="btm-headings">LOOKING FOR: </div>
               <div className="mb-2">
                 {item.looking_for.map((job, index) => {

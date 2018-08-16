@@ -12,7 +12,7 @@ const styles = {
 class AboutUs extends Component {
   render() {
     return (
-      <div className="container" style={styles.container}>
+      <div className="container mb-2" style={styles.container}>
         <div className="card shadow" style={styles.card}>
           <h1>About Us</h1>
           <p>Hi,<br/>

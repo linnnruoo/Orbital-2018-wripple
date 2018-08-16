@@ -44,7 +44,7 @@ class RequestItemList extends Component {
         return (
             <li className="list-group-item">
                 <div className="row">
-                <div className="col-9">
+                <div className="col-lg-9">
                     <h5 className="card-title">
                     <NavLink to={`/profiles/${item.user}`} style={{ textDecoration: 'none' }}>{item.first_name} {item.last_name}</NavLink>
                     </h5>
@@ -53,10 +53,10 @@ class RequestItemList extends Component {
                         <strong>{item.project_title} - {item.role}</strong>
                     </NavLink>
                     </h6>
-                    <h6 className="card-subtitle text-muted mt-2">{item.message}</h6>
+                    <h6 className="card-subtitle text-muted mt-2 mb-2">{item.message}</h6>
                 </div>
 
-                <div className="col-3">
+                <div className="col-lg-3">
                     {this.state.viewed ? 
                         (
                             <div className="float-right">
@@ -64,7 +64,7 @@ class RequestItemList extends Component {
                             </div>
                         ) : 
                         (
-                            <div className="float-right">
+                            <div className="">
                             <button 
                                 type="button" 
                                 className="btn btn-success mr-4 btn-lg"

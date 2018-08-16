@@ -60,11 +60,11 @@ class MyProfile extends Component {
 				<div className="grid">
         		{spinner}
 				<div className="row">
-					<div className="col-3">
+					<div className="col-lg-3">
 						<div className="mb-4">{profileCard}</div>
-						{profileFeedback}
+						<div className="mb-4">{profileFeedback}</div>
 					</div>
-					<div className="col-9">
+					<div className="col-lg-9 ">
 					{
 						this.state.edit_profile ? <div>{profileEdit}</div> : <div>{profileAbout}</div>
 					}

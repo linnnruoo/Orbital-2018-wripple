@@ -117,7 +117,7 @@ class ProjectDetail extends Component {
       return (
         <div className="container project-container">
           <div className="row">
-            <div className="col-9">
+            <div className="col-lg-9">
               <div className="card shadow-sm mb-2">
                 <div className="card-body">
                   <h3 className="card-title text-blue">{single_project.title}</h3>
@@ -187,7 +187,7 @@ class ProjectDetail extends Component {
             
             </div>
 
-            <div className="col-3">
+            <div className="col-lg-3">
 
               <div className="card shadow-sm mb-2">
                 <div className="card-body">

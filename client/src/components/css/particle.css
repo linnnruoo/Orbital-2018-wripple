@@ -5,8 +5,8 @@ body {
 
 /* ---- particles.js container ---- */
 #particles-js{
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  z-index: 1;
   background-color: #0F5E9C;
   background-size: cover;
   background-position: 50% 50%;

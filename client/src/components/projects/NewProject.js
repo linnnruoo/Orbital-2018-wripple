@@ -81,10 +81,10 @@ class NewProject extends Component {
             <div className="grid">
 
               <div className="row mb-4">
-                <div className="col-2">
+                <div className="col-lg-2">
                   <div className="card-title">Project Title *</div>
                 </div>
-                <div className="col-10">
+                <div className="col-lg-10">
                   <div className="input-group">
                     <input 
                       type="text" 
@@ -98,10 +98,10 @@ class NewProject extends Component {
               </div>
 
               <div className="row mb-4">
-                <div className="col-2">
+                <div className="col-lg-2">
                   <div className="card-title">Project Subtitle</div>
                 </div>
-                <div className="col-10">
+                <div className="col-lg-10">
                   <div className="input-group">
                     <input 
                       type="text" 
@@ -115,10 +115,10 @@ class NewProject extends Component {
               </div>
 
               <div className="row mb-4">
-                <div className="col-2">
+                <div className="col-lg-2">
                   <div className="card-title">Project Summary *</div>
                 </div>
-                <div className="col-10">
+                <div className="col-lg-10">
                   <textarea 
                       type="text" 
                       className="form-control"
@@ -131,10 +131,10 @@ class NewProject extends Component {
               </div>
 
               <div className="row mb-4">
-                <div className="col-2">
+                <div className="col-lg-2">
                   <div className="card-title">Project Details *</div>
                 </div>
-                <div className="col-10">
+                <div className="col-lg-10">
                   <textarea 
                     className="form-control" 
                     rows="5"
@@ -144,7 +144,7 @@ class NewProject extends Component {
                   ></textarea>
 
                   <div className="row mt-4">
-                    <div className="col-4">
+                    <div className="col-lg-4">
                       Looking for:
                       <CheckboxGroup
                         checkboxDepth={2}
@@ -161,7 +161,7 @@ class NewProject extends Component {
                       </CheckboxGroup>
                     </div>
 
-                    <div className="col-4">
+                    <div className="col-lg-4">
                       Commitment level:
                       <select 
                         className="custom-select"
@@ -178,7 +178,7 @@ class NewProject extends Component {
                       </select>
                     </div>
 
-                    <div className="col-4">
+                    <div className="col-lg-4">
                       Team size:
                       <select 
                         className="custom-select"

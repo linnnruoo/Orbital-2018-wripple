@@ -86,6 +86,11 @@ class ParticlesDisplay extends Component {
                         "enable": true,
                         "mode": "push"
                       },
+                      "onresize": {
+                        "enable": true,
+                        "density_auto": true,
+                        "density_area": 200
+                      },
                       "resize": true
                     },
                     "modes": {
@@ -117,10 +122,11 @@ class ParticlesDisplay extends Component {
                   "retina_detect": true
                     
                 }}
-                style={{
-                    width: '100%',
+                style={{ 
                     backgroundColor: 'rgb(15,94,156)'
-                }}
+                }} 
+                width='100vw'
+                height='100vh'
             />
             </div>
         );

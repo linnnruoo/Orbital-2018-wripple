@@ -28,7 +28,7 @@ class Profiles extends Component {
           <div className="grid">
             <div className="row">
               
-              <div className="col-3">
+              <div className="col-lg-3">
                 
                 <div className="mb-4">
                   <div className="card shadow profile-card">
@@ -70,7 +70,7 @@ class Profiles extends Component {
                   </div>
                 </div>
                 
-                <div className="card shadow profile-card">
+                <div className="card shadow profile-card mb-4">
                   <div className="card-body">
                     <h5 className="card-title text-blue mb-4">Past feedback</h5>
                     {reviews && reviews.length > 0 ? (
@@ -92,17 +92,17 @@ class Profiles extends Component {
 
               </div>
 
-              <div className="col-9">
+              <div className="col-lg-9 mb-4">
                 <div className="card shadow">
                   <div className="card-body">
                     <h4 className="card-title text-blue mb-4">{profiles.user.first_name}'s Profile</h4>
                     <div className="row m-2">
-                      <div className="col-2">About me:</div>
-                      <div className="col-10 text-justify">{profiles.about_me}</div>
+                      <div className="col-lg-3 col-sm-4 col-md-3 col-xs-6">About me:</div>
+                      <div className="col-lg-9 col-sm-8 col-md-9 col-xs-6 text-justify">{profiles.about_me}</div>
                     </div>
                     <div className="row m-2">
-                      <div className="col-2">My skills:</div>
-                      <div className="col-10">
+                      <div className="col-lg-3 col-sm-4 col-md-3 col-xs-6">My skills:</div>
+                      <div className="col-lg-9 col-sm-8 col-md-9 col-xs-6">
                         <ul>
                           {
                             profiles.skills ?
@@ -115,8 +115,8 @@ class Profiles extends Component {
                       </div>
                     </div>
                     <div className="row m-2">
-                      <div className="col-2">My interests:</div>
-                      <div className="col-10">
+                      <div className="col-lg-3 col-sm-4 col-md-3 col-xs-6">My interests:</div>
+                      <div className="col-lg-9 col-sm-8 col-md-9 col-xs-6">
                         <ul>
                           {
                             profiles.interests ?

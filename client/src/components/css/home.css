@@ -2,20 +2,29 @@
   margin-right: 0px
 }
 
+.Home{
+  /* margin-top: -200px */
+}
+
+.top{
+  height: 100vh;
+}
+
 .text {
-    position: absolute;
-	top: 50%;
-	right: 50%;
-    transform: translate(50%,-50%);
-    max-width: 90%;
+  position: absolute;
+  z-index: auto;
+    top: 25vh;
+    /* right: 50%; */
+    /* transform: translate(50%, 200%); */
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .container1 .caption {
     bottom: 3rem;
     z-index: 10;
+    color: white;
 }
-
-.container1 .caption {color: white;}
 
 .display-3 {
     text-align: center;
@@ -37,18 +46,11 @@
 }
 
 .content {
-    margin-top: 50px;
-}
-.container2{
-    max-width: 1500px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .container2 h3 {font-weight: 400;}
-
-.img2 {margin-top: 10px;}
-
-.img3 {background: url(../img/annie-spratt-home.jpg); width:100%;}
 
 .col1 {
     padding-bottom: 200px;
@@ -74,12 +76,6 @@
     padding-bottom: 40px;
 }
 
-.card1{
-    max-width: 20rem;
-    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
-    height: 350px
-}
-
 .card2 {
     border: none;
     box-shadow: none;
@@ -98,11 +94,6 @@
     margin: 5px 2px;
 }
 
-.about-section a:hover {
-    color: black;
-    text-decoration: none;
-}
-
 .about-section {
     padding:40px; 
     background-color:rgb(15,94,156); 
@@ -112,11 +103,64 @@
 .button1 {margin-right:5px;}
 .button2 {margin-left:5px;}
 
-.home-icon {
-    font-size: 24px;
-    color: white;
+.service-box {
+    max-width: 400px;
 }
 
-.home-icon:hover {
-    color: black;
+.text-primary {
+  color: rgb(15,94,156) !important;
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.portfolio-box .portfolio-box-caption {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgba(68, 102, 134, 0.9);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
+
+.portfolio-box:focus {
+  outline: none;
 }

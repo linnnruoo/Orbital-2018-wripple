@@ -109,8 +109,8 @@ class ProfileEdit extends Component {
           <div className="card-body">
             <h4 className="card-title text-blue mb-4">Edit Profile</h4>
             <div className="row m-2">
-              <div className="col-3">About me:</div>
-              <div className="col-9 text-justify form-group">
+              <div className="col-lg-3 col-xs-6 col-sm-6 col-md-3">About me:</div>
+              <div className="col-lg-9 col-xs-6 col-sm-6 col-md-9 text-justify form-group">
                 <textarea
                   className="form-control"
                   id="about"
@@ -121,8 +121,8 @@ class ProfileEdit extends Component {
               </div>
             </div>
             <div className="row m-2">
-              <div className="col-3">My skills:</div>
-              <div className="col-9">
+              <div className="col-lg-3 col-xs-6 col-sm-6 col-md-3">My skills:</div>
+              <div className="col-lg-9 col-xs-6 col-sm-6 col-md-9">
                 <form className="input-group mb-2">
                   <input
                     type="text"
@@ -146,8 +146,8 @@ class ProfileEdit extends Component {
               </div>
             </div>
             <div className="row m-2">
-              <div className="col-3">My interests:</div>
-              <div className="col-9">
+              <div className="col-lg-3 col-xs-6 col-sm-6 col-md-3">My interests:</div>
+              <div className="col-lg-9 col-xs-6 col-sm-6 col-md-9">
                 <form className="input-group mb-2">
                   <input
                     type="text"
@@ -171,8 +171,8 @@ class ProfileEdit extends Component {
               </div>
             </div>
             <div className="row m-2">
-              <div className="col-3">Major:</div>
-              <div className="col-9">
+              <div className="col-lg-3 col-xs-6 col-md-3">Major:</div>
+              <div className="col-lg-9 col-xs-6 col-md-9">
                 <div className="input-group mb-2">
                   <input
                     type="text"
@@ -185,8 +185,8 @@ class ProfileEdit extends Component {
               </div>
             </div>
             <div className="row m-2">
-              <div className="col-3">Specialization:</div>
-              <div className="col-9">
+              <div className="col-lg-3 col-xs-6 col-md-3">Specialization:</div>
+              <div className="col-lg-9 col-xs-6 col-md-9">
                 <div className="input-group mb-2">
                   <input
                     type="text"
