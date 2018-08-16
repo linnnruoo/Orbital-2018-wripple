@@ -12,4 +12,13 @@ wripple: Collaboration Made Easy for Students.It allows students to post the pro
 30-07-18 Internal Server Error due to client side routering problems solved.<br />
 13-08-18 The platform is now responsive.
 
+## Acknowledgement
+* Our advisor Kyle Chu
+* Prof Jin Zhao
+* NUS School of Computing
+* All the people who have helped us along the journey!
+
+## License
+Copyright (c) Lin Ruo [@linnnruoo](https://github.com/linnnruoo) & Kevin Chan [@kev-inc](https://github.com/kev-in) - Released under the MIT license.
+
 ## Live @ https://wripple.herokuapp.com
