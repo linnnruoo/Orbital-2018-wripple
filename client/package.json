@@ -20,13 +20,17 @@
     "react-typed": "^1.0.9",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
-    "websocket": "^1.0.26"
+    "websocket": "^1.0.26",
+    "snyk": "^1.161.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "http://localhost:5000",
+  "snyk": true
 }
