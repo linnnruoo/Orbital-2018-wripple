@@ -4,29 +4,33 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
-    "bootstrap": "^4.1.3",
+    "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
     "font-awesome": "^4.7.0",
     "jwt-decode": "^2.2.0",
     "react": "^16.4.0",
     "react-checkbox-group": "^4.0.1",
-    "react-dom": "^16.4.0",
+    "react-dom": "^16.4.2",
     "react-js-pagination": "^3.0.2",
     "react-paginate": "^5.2.3",
     "react-particles-js": "^2.2.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4",
+    "react-scripts": "3.0.0",
     "react-typed": "^1.0.9",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
-    "websocket": "^1.0.26"
+    "websocket": "^1.0.26",
+    "snyk": "^1.168.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "http://localhost:5000",
+  "snyk": true
 }
